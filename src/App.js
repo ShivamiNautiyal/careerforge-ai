@@ -1,5 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import ResumeBuilder from "./pages/ResumeBuilder/ResumeBuilder";
 import ResumeAnalyzer from "./pages/ResumeAnalyzer/ResumeAnalyzer";
@@ -11,7 +10,7 @@ import CodeExplainer from "./pages/CodeExplainer/CodeExplainer";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Dashboard />} />
          <Route path="/resume-builder" element={<ResumeBuilder />} /> 
@@ -21,7 +20,7 @@ function App() {
         <Route path="/interview-prep" element={<InterviewPrep />} />
         <Route path="/code-explainer" element={<CodeExplainer />} /> 
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
