@@ -1,0 +1,527 @@
+/* =====================================================
+   A4 RESUME
+===================================================== */
+
+.resume-page {
+  width: 210mm;
+  min-height: 297mm;
+  box-sizing: border-box;
+
+  background: #ffffff;
+  color: #1f2937;
+
+  padding: 14mm 16mm;
+
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.45;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+
+  margin: 0 auto;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.resume-header {
+  text-align: center;
+
+  padding-bottom: 13px;
+  margin-bottom: 16px;
+
+  border-bottom: 2px solid #2563eb;
+}
+
+.resume-header h1 {
+  margin: 0 0 7px;
+
+  font-family: "Georgia", "Times New Roman", serif;
+
+  font-size: 28px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  color: #172554;
+
+  text-transform: uppercase;
+}
+
+
+/* CONTACT DETAILS */
+
+.contact-info {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 6px;
+
+  font-size: 10.5px;
+
+  color: #4b5563;
+}
+
+.contact-info span:not(:last-child)::after {
+  content: "|";
+
+  margin-left: 7px;
+
+  color: #9ca3af;
+}
+
+
+/* PROFILE LINKS */
+
+.profile-links {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 18px;
+
+  margin-top: 6px;
+
+  font-size: 10.5px;
+}
+
+.profile-links a {
+  color: #2563eb;
+
+  text-decoration: none;
+
+  font-weight: 600;
+}
+
+.profile-links a:hover {
+  text-decoration: underline;
+}
+
+
+/* =====================================================
+   SECTION
+===================================================== */
+
+.resume-section {
+  margin-bottom: 13px;
+}
+
+
+/* SECTION HEADINGS */
+
+.resume-section h2 {
+  margin: 0 0 7px;
+
+  padding-bottom: 4px;
+
+  font-family: "Georgia", "Times New Roman", serif;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.8px;
+
+  text-transform: uppercase;
+
+  color: #1d4ed8;
+
+  border-bottom: 1px solid #93c5fd;
+
+  position: relative;
+}
+
+
+/* Small blue line under heading */
+
+.resume-section h2::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: -1px;
+
+  width: 45px;
+
+  height: 2px;
+
+  background: #2563eb;
+}
+
+
+/* NORMAL TEXT */
+
+.section-text {
+  margin: 0;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+
+  color: #374151;
+
+  text-align: justify;
+}
+
+
+/* =====================================================
+   EDUCATION
+===================================================== */
+
+.education-item {
+  margin-bottom: 9px;
+}
+
+.education-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: baseline;
+
+  gap: 20px;
+}
+
+.education-top strong {
+  font-size: 11.5px;
+
+  font-weight: 700;
+
+  color: #111827;
+}
+
+.date {
+  white-space: nowrap;
+
+  font-size: 10px;
+
+  color: #6b7280;
+}
+
+.institution {
+  margin: 2px 0 0;
+
+  font-size: 10.8px;
+
+  color: #4b5563;
+}
+
+
+/* =====================================================
+   SKILLS
+===================================================== */
+
+.skills-list {
+  margin: 0;
+
+  padding-left: 18px;
+}
+
+.skills-list li {
+  margin-bottom: 3px;
+
+  font-size: 11px;
+
+  color: #374151;
+}
+
+.skills-list li::marker {
+  color: #2563eb;
+
+  font-size: 10px;
+}
+
+
+/* =====================================================
+   PROJECTS
+===================================================== */
+
+.project-item {
+  margin-bottom: 10px;
+
+  padding-left: 2px;
+}
+
+.project-heading {
+  display: flex;
+
+  align-items: baseline;
+
+  gap: 9px;
+
+  flex-wrap: wrap;
+}
+
+.project-heading strong {
+  font-size: 11.5px;
+
+  font-weight: 700;
+
+  color: #111827;
+}
+
+.technologies {
+  font-size: 10.2px;
+
+  color: #2563eb;
+
+  font-style: italic;
+}
+
+.project-description {
+  margin: 3px 0;
+
+  font-size: 10.8px;
+
+  line-height: 1.45;
+
+  color: #374151;
+
+  text-align: justify;
+}
+
+.project-links {
+  display: flex;
+
+  gap: 14px;
+
+  margin-top: 3px;
+
+  font-size: 10px;
+}
+
+.project-links a {
+  color: #2563eb;
+
+  text-decoration: none;
+
+  font-weight: 600;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+
+
+/* =====================================================
+   WORK EXPERIENCE
+===================================================== */
+
+.experience-item {
+  margin-bottom: 10px;
+}
+
+.experience-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: baseline;
+
+  gap: 20px;
+}
+
+.experience-top strong {
+  font-size: 11.5px;
+
+  font-weight: 700;
+
+  color: #111827;
+}
+
+.experience-top .date {
+  white-space: nowrap;
+
+  font-size: 10px;
+
+  color: #6b7280;
+}
+
+.company-name {
+  margin: 2px 0 0;
+
+  font-size: 10.8px;
+
+  font-weight: 600;
+
+  color: #2563eb;
+}
+
+.experience-description {
+  margin: 3px 0;
+
+  font-size: 10.8px;
+
+  line-height: 1.45;
+
+  color: #374151;
+
+  text-align: justify;
+}
+
+
+/* =====================================================
+   CERTIFICATIONS
+===================================================== */
+
+.certification-item {
+  margin-bottom: 9px;
+
+  padding-left: 2px;
+}
+
+.certification-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: baseline;
+
+  gap: 20px;
+}
+
+.certification-top strong {
+  font-size: 11.5px;
+
+  font-weight: 700;
+
+  color: #111827;
+}
+
+.certification-top .date {
+  white-space: nowrap;
+
+  font-size: 10px;
+
+  color: #6b7280;
+}
+
+.certification-organization {
+  margin: 2px 0;
+
+  font-size: 10.8px;
+
+  color: #4b5563;
+}
+
+.certificate-link {
+  font-size: 10px;
+
+  color: #2563eb;
+
+  text-decoration: none;
+
+  font-weight: 600;
+}
+
+.certificate-link:hover {
+  text-decoration: underline;
+}
+
+
+/* =====================================================
+   STRENGTHS
+===================================================== */
+
+.strengths-list {
+  margin: 0;
+
+  padding-left: 18px;
+}
+
+.strengths-list li {
+  margin-bottom: 3px;
+
+  font-size: 11px;
+
+  color: #374151;
+}
+
+.strengths-list li::marker {
+  color: #2563eb;
+
+  font-size: 10px;
+}
+
+
+/* =====================================================
+   CAREER OBJECTIVE
+===================================================== */
+
+.career-objective {
+  margin-bottom: 0;
+}
+
+
+/* =====================================================
+   LINKS
+===================================================== */
+
+.resume-page a {
+  transition: 0.2s ease;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1100px) {
+
+  .resume-page {
+    width: 100%;
+
+    min-height: auto;
+
+    padding: 30px;
+
+    box-shadow: none;
+  }
+
+}
+
+
+/* =====================================================
+   PRINT / PDF
+===================================================== */
+
+@media print {
+
+  body {
+    margin: 0;
+
+    background: #ffffff;
+  }
+
+  .resume-page {
+    width: 210mm;
+
+    min-height: 297mm;
+
+    margin: 0;
+
+    padding: 14mm 16mm;
+
+    box-shadow: none;
+  }
+
+  .resume-section {
+    break-inside: avoid;
+  }
+
+  .education-item,
+  .project-item,
+  .experience-item,
+  .certification-item {
+    break-inside: avoid;
+  }
+
+}

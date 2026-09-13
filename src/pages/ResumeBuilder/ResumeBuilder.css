@@ -1,0 +1,94 @@
+.resume-builder {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  gap: 30px;
+  padding: 30px;
+  background: #f5f7fb;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Left Form Panel */
+.resume-form-panel {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  height: fit-content;
+}
+
+/* Right Resume Preview */
+.resume-preview {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  min-height: 800px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  position: sticky;
+  top: 20px;
+
+  box-sizing: border-box;
+}
+
+/* Form headings */
+.resume-form-panel h2 {
+  color: #1f2937;
+  margin-bottom: 15px;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .resume-builder {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  .resume-preview {
+    position: static;
+    min-height: auto;
+  }
+}
+.download-btn {
+  display: block;
+  margin: 0 auto 20px;
+
+  padding: 12px 24px;
+
+  background: #2563eb;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background: #1d4ed8;
+}
+.reset-btn {
+  display: block;
+  margin: 0 auto 20px;
+
+  padding: 10px 22px;
+
+  background: #ffffff;
+  color: #dc2626;
+
+  border: 1px solid #dc2626;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background: #dc2626;
+  color: white;
+}

@@ -1,0 +1,49 @@
+.dashboard{
+    min-height:100vh;
+    padding:40px;
+    background:linear-gradient(135deg,#eef2ff,#f8fafc);
+}
+
+.dashboard h1{
+
+margin-bottom:10px;
+
+}
+
+.dashboard p{
+
+margin-bottom:35px;
+
+color:#666;
+
+}
+
+.card-container{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:25px;
+
+}
+
+@media(max-width:900px){
+
+.card-container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:600px){
+
+.card-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
