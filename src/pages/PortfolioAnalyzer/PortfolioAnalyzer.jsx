@@ -1091,7 +1091,12 @@ function PortfolioAnalyzer() {
 
               <div className="portfolio-score-card">
 
-                <div className="portfolio-score-circle">
+             <div
+  className="portfolio-score-circle"
+  style={{
+    "--score": `${result.score}%`
+  }}
+>
 
                   <div>
                     <strong>
