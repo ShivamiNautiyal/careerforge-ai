@@ -875,13 +875,14 @@
 /* =========================================
    PORTFOLIO PREVIEW ROOT
 ========================================= */
-
 .portfolio-preview {
   position: relative;
 
-  height: 820px;
+  min-height: 820px;
 
-  overflow-y: auto;
+  height: auto;
+
+  overflow: visible;
 
   overflow-x: hidden;
 
@@ -891,9 +892,8 @@
 
   box-shadow:
     0 25px 70px rgba(15,23,42,0.18);
-
-  scroll-behavior: smooth;
 }
+
 
 .portfolio-preview::-webkit-scrollbar {
   width: 7px;
@@ -3471,4 +3471,54 @@
     height: 160px;
   }
 
+}
+
+/* ================================
+   PORTFOLIO ACTION BUTTONS
+================================ */
+
+.portfolio-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 30px auto;
+  flex-wrap: wrap;
+}
+
+.portfolio-action-btn {
+  border: none;
+  padding: 13px 22px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.portfolio-action-btn:hover {
+  transform: translateY(-2px);
+}
+
+.pdf-btn {
+  background: #111827;
+  color: white;
+}
+
+.link-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.open-btn {
+  background: #7c3aed;
+  color: white;
+}
+.clear-btn {
+  background: #dc2626;
+  color: white;
+}
+
+.clear-btn:hover {
+  background: #b91c1c;
 }
