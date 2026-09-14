@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/careerforge-ai/static/css/main.c6217c87.css",
+    "main.css": "/careerforge-ai/static/css/main.64653dd1.css",
     "main.js": "/careerforge-ai/static/js/main.9f88aab8.js",
     "index.html": "/careerforge-ai/index.html",
-    "main.c6217c87.css.map": "/careerforge-ai/static/css/main.c6217c87.css.map",
+    "main.64653dd1.css.map": "/careerforge-ai/static/css/main.64653dd1.css.map",
     "main.9f88aab8.js.map": "/careerforge-ai/static/js/main.9f88aab8.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6217c87.css",
+    "static/css/main.64653dd1.css",
     "static/js/main.9f88aab8.js"
   ]
 }
